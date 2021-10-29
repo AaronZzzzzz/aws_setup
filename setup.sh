@@ -16,6 +16,6 @@
 #sudo apt update
 #sudo apt install gh
 
-#sudo cp merge-s3.xml /etc/clickhouse-server/config.d/
-sudo cp -i config.xml /etc/clickhouse-server/config.xml
+sudo cp merge-s3.xml /etc/clickhouse-server/config.d/merge-s3.xml
+sudo cp config.xml /etc/clickhouse-server/config.xml
 
