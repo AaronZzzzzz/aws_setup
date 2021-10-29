@@ -3,7 +3,7 @@
     <disks>
       <s3>
         <type>s3</type>
-        <endpoint>s3://yybf-bucket/clickhouse/</endpoint>
+        <endpoint>https://yybf-bucket.s3.us-east-2.amazonaws.com/clickhouse/</endpoint>
         <use_environment_credentials>true</use_environment_credentials>
       </s3>
     </disks>
