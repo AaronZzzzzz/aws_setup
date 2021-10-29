@@ -10,5 +10,4 @@ sudo apt-get install -y clickhouse-server clickhouse-client
 sudo apt-get install awscli
 sudo apt-get install gh
 
-git clone https://github.com/AaronZzzzzz/aws_setup.git
 sudo cp ./aws_setup/merge-s3.xml /etc/clickhouse-server/config.d/
