@@ -7,14 +7,14 @@ echo "deb https://repo.clickhouse.com/deb/stable/ main/" | sudo tee \
 sudo apt-get update
 sudo apt-get install -y clickhouse-server clickhouse-client
 
-sudo apt-get install awscli
+sudo apt-get install -y awscli
 echo -e "\n \n us-east-2 json" | aws configure
 
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-sudo apt install gh
+sudo apt install -y gh
 
-sudo cp merge-s3.xml /etc/clickhouse-server/config.d/merge-s3.xml
+#sudo cp merge-s3.xml /etc/clickhouse-server/config.d/merge-s3.xml
 sudo cp config.xml /etc/clickhouse-server/config.xml
 
