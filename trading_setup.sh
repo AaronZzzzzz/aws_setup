@@ -5,7 +5,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 sudo apt update
 sudo apt install -y gh
 
-sudo apt install python3-pip
+sudo apt install -y python3-pip
 pip install pandas
 pip install ccxt
 
